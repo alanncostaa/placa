@@ -1,5 +1,5 @@
 
-# 🚗 PLACA2 — Reconhecimento de Placas (ANPR/OCR)
+# Reconhecimento de Placas (ANPR/OCR)
 
 Este projeto implementa um sistema completo de Reconhecimento Automático de Placas Veiculares (ANPR/OCR), utilizando:
 
@@ -11,7 +11,7 @@ O objetivo é demonstrar uma pipeline funcional de OCR para placas, desde o pré
 
 ---
 
-# 🗂️ Estrutura do Projeto
+# Estrutura do Projeto
 
 ````
 PLACA2/
@@ -38,13 +38,13 @@ PLACA2/
 
 ---
 
-# 📥 **PASSO PRÉVIO — Baixando e preparando o dataset**
+# **PASSO PRÉVIO — Baixando e preparando o dataset**
 
-### 1️⃣ Baixe o dataset oficial do OpenALPR:
+### 1. Baixe o dataset oficial do OpenALPR:
 
 📎 **Link:** [https://github.com/openalpr/benchmarks](https://github.com/openalpr/benchmarks)
 
-### 2️⃣ Baixe o arquivo `.zip` do repositório
+### 2 .Baixe o arquivo `.zip` do repositório
 
 Você encontra as imagens dentro da pasta:
 
@@ -52,13 +52,13 @@ Você encontra as imagens dentro da pasta:
 seg_and_ocr/usimages/
 ```
 
-### 3️⃣ Copie todas as imagens dessa pasta para:
+### 3. Copie todas as imagens dessa pasta para:
 
 ```
 PLACA2/dataset/train/
 ```
 
-### 4️⃣ Certifique-se de que existe um arquivo:
+### 4. Certifique-se de que existe um arquivo:
 
 ```
 PLACA2/dataset/labels.csv
@@ -72,7 +72,7 @@ Com as colunas mínimas:
 
 ---
 
-# 🚀 Instalação
+# Instalação
 
 ### Criar ambiente virtual (opcional)
 
@@ -94,9 +94,9 @@ pip install -r requirements.txt
 
 ---
 
-# 📋 Execução — Passo a Passo
+#  Execução — Passo a Passo
 
-## 1️⃣ **Segmentar os caracteres das placas**
+## 1**Segmentar os caracteres das placas**
 
 Este script:
 
@@ -114,7 +114,7 @@ python src/segment_chars.py
 
 ---
 
-## 2️⃣ **Treinar os modelos (KNN, SVM, RF)**
+## 2 **Treinar os modelos (KNN, SVM, RF)**
 
 ```bash
 python src/train_chars.py
@@ -131,7 +131,7 @@ Além das métricas impressas no terminal.
 
 ---
 
-## 3️⃣ **Testar uma placa nova**
+## 3 **Testar uma placa nova**
 
 ```bash
 python src/test_plate.py --image caminho/para/placa.jpg
@@ -166,5 +166,6 @@ RF:  ABC1234
 
 É só pedir!
 ```
+
 
 
