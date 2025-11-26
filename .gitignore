@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyd
+*.dll
+*.pkl
+*.h5
+*.pt
+*.onnx
+*.pickle
+outputs/
