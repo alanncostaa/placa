@@ -96,7 +96,7 @@ pip install -r requirements.txt
 
 #  Execução — Passo a Passo
 
-## 1**Segmentar os caracteres das placas**
+## 1 **Segmentar os caracteres das placas**
 
 Este script:
 
@@ -109,7 +109,7 @@ Este script:
 python src/segment_chars.py
 ```
 
-📌 *Saída:*
+*Saída:*
 `dataset_chars/` contendo todas as pastas de caracteres.
 
 ---
@@ -120,7 +120,7 @@ python src/segment_chars.py
 python src/train_chars.py
 ```
 
-📌 *Saída:*
+*Saída:*
 Modelos gerados dentro de `outputs/models/`:
 
 * `knn_chars.pkl`
@@ -143,7 +143,7 @@ O script realiza:
 * Classificação caractere por caractere
 * Montagem final da placa reconhecida
 
-📌 *Saída:*
+*Saída:*
 O terminal exibe algo como:
 
 ```
@@ -154,7 +154,7 @@ RF:  ABC1234
 
 ---
 
-# 📌 Observações
+# Observações
 
 * As pastas `outputs/` e `dataset_chars/` são geradas automaticamente.
 * Placas do dataset OpenALPR são dos EUA — o formato de caracteres pode variar.
@@ -166,6 +166,7 @@ RF:  ABC1234
 
 É só pedir!
 ```
+
 
 
 
