@@ -13,19 +13,25 @@ Abaixo está a estrutura principal do projeto:
 
 PLACA2/
 ├── dataset/
-│   ├── train/                 \# Contém as imagens originais da placa.
-│   ├── test/                  \# Contém as imagens de teste da placa (opcional).
-│   └── labels.csv             \# Arquivo CSV com metadados e o texto da placa (rótulo).
-├── dataset\_chars/             \# Gerada pelo script de segmentação. Armazena os caracteres recortados e agrupados por classe para o treinamento.
+│   ├── train/              # Imagens originais das placas (treino)
+│   ├── test/               # Imagens de teste das placas (opcional)
+│   └── labels.csv          # Metadados + texto da placa (rótulos)
+│
+├── dataset_chars/          # Gerada pelo script de segmentação.
+│                           # Contém caracteres recortados organizados por classe.
+│
 ├── outputs/
-│   └── models/                \# Modelos ML treinados (.pkl) são salvos aqui (KNN, SVM, RF).
+│   └── models/             # Modelos treinados (.pkl): KNN, SVM, RF
+│
 ├── src/
-│   ├── segment\_chars.py       \# Segmenta caracteres das placas e organiza o 'dataset\_chars'.
-│   ├── train\_chars.py         \# Treina os modelos de classificação (KNN, SVM, RF) e avalia métricas.
-│   ├── test\_plate.py          \# Carrega os modelos, faz segmentação e lê a placa na imagem de teste.
-│   ├── preprocess.py          \# Funções de pré-processamento de imagem.
-│   └── utils.py               \# Funções auxiliares (leitura de imagem, etc.).
-└── requirements.txt           \# Dependências Python necessárias.
+│   ├── segment_chars.py    # Segmenta caracteres das placas e monta dataset_chars
+│   ├── train_chars.py      # Treina os classificadores e calcula métricas
+│   ├── test_plate.py       # Carrega o modelo e reconhece a placa de uma imagem
+│   ├── preprocess.py       # Funções de pré-processamento (grayscale, binarização, etc.)
+│   └── utils.py            # Funções auxiliares (leitura, salvamento, normalização, etc.)
+│
+└── requirements.txt        # Dependências Python do projeto
+
 
 ````
 
@@ -95,4 +101,5 @@ python src/test_plate.py --image "caminho/para/sua/imagem.jpg"
 > **Resultado:** O console exibirá as previsões da placa para cada um dos modelos treinados (KNN, SVM, RF).
 
 ```
+
 ```
