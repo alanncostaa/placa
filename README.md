@@ -1,4 +1,4 @@
-```markdown
+
 # 🚗 Reconhecimento de Placas de Carro (ANPR/OCR)
 
 Este projeto implementa um sistema básico de Reconhecimento Óptico de Caracteres (OCR) para placas de veículos, utilizando técnicas de Visão Computacional (OpenCV) para segmentação e Machine Learning (Scikit-learn) para classificação de caracteres.
