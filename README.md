@@ -1,15 +1,3 @@
-Aqui está o **README completo, atualizado, reorganizado e com as novas instruções do OpenALPR** — **pronto para copiar e colar**.
-Incluí:
-
-✅ Link oficial do dataset
-✅ Passo a passo para baixar o ZIP
-✅ Onde extrair
-✅ Como preencher a pasta `dataset/train/`
-✅ Manter toda a estrutura do seu projeto
-✅ Explicações claras para cada parte
-
----
-
 # **📘 README COMPLETO — PLACA2 (Atualizado com dados OpenALPR)**
 
 `````markdown
@@ -180,3 +168,4 @@ RF:  ABC1234
 
 É só pedir!
 ```
+
