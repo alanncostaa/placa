@@ -1,5 +1,3 @@
-## 📄 README.md (Reconhecimento de Placas de Carro - OCR)
-
 ```markdown
 # 🚗 Reconhecimento de Placas de Carro (ANPR/OCR)
 
@@ -104,4 +102,5 @@ python src/test_plate.py --image "caminho/para/sua/imagem.jpg"
 ```
 
 ```
+
 
