@@ -1,6 +1,4 @@
-# **📘 README COMPLETO — PLACA2 (Atualizado com dados OpenALPR)**
 
-`````markdown
 # 🚗 PLACA2 — Reconhecimento de Placas (ANPR/OCR)
 
 Este projeto implementa um sistema completo de Reconhecimento Automático de Placas Veiculares (ANPR/OCR), utilizando:
@@ -15,7 +13,7 @@ O objetivo é demonstrar uma pipeline funcional de OCR para placas, desde o pré
 
 # 🗂️ Estrutura do Projeto
 
-````plaintext
+````
 PLACA2/
 ├── dataset/
 │   ├── train/              # Imagens originais das placas (treino)
@@ -168,4 +166,5 @@ RF:  ABC1234
 
 É só pedir!
 ```
+
 
