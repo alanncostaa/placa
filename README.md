@@ -11,26 +11,27 @@ Abaixo está a estrutura principal do projeto:
 
 ```
 
+````plaintext
 PLACA2/
 ├── dataset/
 │   ├── train/              # Imagens originais das placas (treino)
-│   ├── test/               # Imagens de teste das placas (opcional)
-│   └── labels.csv          # Metadados + texto da placa (rótulos)
+│   ├── test/               # Imagens de teste (opcional)
+│   └── labels.csv          # Metadados + rótulos das placas
 │
-├── dataset_chars/          # Gerada pelo script de segmentação.
-│                           # Contém caracteres recortados organizados por classe.
+├── dataset_chars/          # Criada pelo script de segmentação
+│                           # Armazena caracteres recortados por classe
 │
 ├── outputs/
 │   └── models/             # Modelos treinados (.pkl): KNN, SVM, RF
 │
 ├── src/
-│   ├── segment_chars.py    # Segmenta caracteres das placas e monta dataset_chars
-│   ├── train_chars.py      # Treina os classificadores e calcula métricas
-│   ├── test_plate.py       # Carrega o modelo e reconhece a placa de uma imagem
-│   ├── preprocess.py       # Funções de pré-processamento (grayscale, binarização, etc.)
-│   └── utils.py            # Funções auxiliares (leitura, salvamento, normalização, etc.)
+│   ├── segment_chars.py    # Segmenta placa em caracteres e monta dataset_chars
+│   ├── train_chars.py      # Treina os classificadores e salva modelos
+│   ├── test_plate.py       # Lê uma placa nova usando os modelos treinados
+│   ├── preprocess.py       # Funções de pré-processamento (blur, binarização etc.)
+│   └── utils.py            # Funções auxiliares e utilitárias
 │
-└── requirements.txt        # Dependências Python do projeto
+└── requirements.txt        # Dependências Python
 
 
 ````
@@ -103,3 +104,4 @@ python src/test_plate.py --image "caminho/para/sua/imagem.jpg"
 ```
 
 ```
+
